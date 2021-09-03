@@ -61,7 +61,7 @@ img {
 }
 
 .row {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -635,23 +635,55 @@ img {
     color: var(--orange-color);
 }
 
-.about-section .skills {
+.about-section .tab-content {
     flex: 0 0 100%;
     max-width: 100%;
 }
+
+/* .about-section .skills {
+    flex: 0 0 100%;
+    max-width: 100%;
+} */
 
 .about-section .skills .skill-item{
 flex: 0 0 50%;
 max-width: 50%;
 padding: 0 15px;
+margin-bottom: 40px;
 }
 
-.about-section .skills .skill-item{
+.about-section .skills .skill-item p {
+    font-size: 16px;
+    color:var(--text-black-300);
+    text-transform: capitalize;
+    margin: 0 0 10px;
+}
+
+.about-section .skills .skill-item .progress{
     height: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.about-section .skills .skill-item .progress-bar {
+    background-color: var(--text-black-300);
+    height: 6px;
+    left: 7px;
+    top: 7px;
+    position: absolute;
+    border-radius: 10px;
 }
 
 .about-section .skills .skill-item .progress-bar span { 
-    display: none;
+    position: absolute;
+    right: 0;
+    top:0;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-black-300);
+    margin-top: -40px;
+    
+
 }
 
 .progress-bar {
